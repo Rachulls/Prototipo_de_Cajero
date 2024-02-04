@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>BANCO APP</title>
+</head>
+
+<body>
+    <section id="landing" class="landing container">
+        <img class="logo__landing" src="./images/scotiawth.png">
+        <h1>¡Hola! Te damos la bienvenida a Scotiabank</h1>
+        <div class="bienvenido">
+            <img src="./images/cc-mastercard.svg" width="60px">
+            <h3>Ingresa tu tarjeta</h3>
+        </div>
+
+    </section>
+    <section id="ingresar" class="step__1 container">
+        <img class="scotia__logo" src="./images/scotiaimg.png">
+        <h2>Ingresa su clave de cajero</h2>
+        <form class="inicio">
+            <input id="password" type="password">
+            <button type="button" id="buscarPassword" class="send">Continuar</button>
+        </form>
+    </section>
+    <section id="acciones" class="step__2 container">
+        <img class="logout" id="logout" src="./images/right-from-bracket-solid.svg" width="40">
+        <div class="num__cuenta">
+            <h3>Hola, <span id="nombre"></span>.</h3>
+            <hr width="700px">
+            <h3>Quiero</h3>
+        </div>
+        <div class="operacion">
+            <div class="info">
+                <h5> <img src="./images/id-card-solid.svg" width="20px">  DNI: <span id="dni"></span></h5>
+                <h5> <img src="./images/credit-card-solid.svg" width="20px">  CC: ******1234</h5>
+            </div>
+            <div class="operaciones">
+                <button id="consultarSaldo" class="op">Consultar saldo</button>
+                <button id="ingresarDinero" class="op">Ingresar monto</button>
+                <button id="retirarDinero" class="op">Retirar monto</button>
+            </div>
+        </div>
+    </section>
+    <section id="saldoActual" class="step__3 container">
+        <img class="scotia__logo" src="./images/scotiaimg.png">
+        <h3>Su monto actual es</h3>
+        <h4>S/<span id="monto"></span>.00</h4>
+        <button type="button" id="back" class="send">Regresar</button>
+    </section>
+    <section id="depositar" class="step__4 container">
+        <img class="scotia__logo" src="./images/scotiaimg.png">
+        <h2>Ingresa el monto a depositar</h2>
+        <form id="formMonto" class="inicio">
+            <input id="ingresarMonto" type="text" autocomplete="off">
+            <button type="button" id="enviarMonto" class="send">Enviar</button>
+        </form>
+    </section>
+    <section id="retirar" class="step__5 container">
+        <img class="scotia__logo" src="./images/scotiaimg.png">
+        <h3>Ingrese el monto que desea retirar</h3>
+        <form id="formRetiro" class="retiro">
+            <input id="montoRetiro" type="text" autocomplete="off">
+            <button type="button" id="retirarMonto" class="send">Realizar retiro</button>
+        </form>
+    </section>
+    <section id="loading" class="step__6 container">
+        <img src="./images/loading.gif">
+        <h3>Estamos procesando tu operacion</h3>
+        </div>
+    </section>
+    <section id="final" class="step__7 container">
+        <h3>¡Gracias por confiar en nosotros!</h3>
+        <h4>No olvides retirar tu tarjeta</h4>
+        <img class="scotia__logo" src="./images/scotiaimg.png">
+    </section>
+    <section id="montoExcedido" class="step__8 container">
+        <h3>Ha superado el límite permitido en su cuenta.</h3>
+        <h3>Ingrese un monto menor.</h3>
+        <button type="button" id="reintentarDeposito" class="send">Regresar</button>
+    </section>
+    <section id="montoSuperado" class="step__8 container">
+        <h3>Ha superado el límite permitido en su cuenta.</h3>
+        <h3>Ingrese un monto menor.</h3>
+        <button type="button" id="reintentarRetiro" class="send">Regresar</button>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

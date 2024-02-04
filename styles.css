@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: "Rubik";
+}
+
+body {
+  background-color: #E61910;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.container {
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 30px;
+  height: 420px;
+}
+
+.landing{
+  background-color: #E61910;
+  color: white;
+}
+
+.logo__landing{
+  width: 80px;
+}
+
+.bienvenido{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.scotia__logo {
+  width: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logout{
+  transform: translate(355px);
+  cursor: pointer;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input{
+  outline: none;
+  width: 80px;
+}
+
+.send {
+  background-color: #ec111a;
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.step__2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.operaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.op {
+  border: solid 1px #ec111a;
+  border-radius: 5px;
+  background-color: #ec111a;
+  color: white;
+  padding: 10px;
+  width: 150px;
+}
+
+.op:hover {
+  background: white;
+  color: #ec111a;
+  transition: all 0.5s ease;
+}
+
+.retiro,
+h3,
+h4 {
+  text-align: center;
+}
+
+.step__1, .step__2, .step__3, .step__4, .step__5, .step__8{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.montos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.operacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 200px;
+}
+
+.opciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rtr {
+  border: solid 1px #ec111a;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  width: 220px;
+}
+
+.rtr:hover {
+  background: #ec111a;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.transferencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 15px;
+}
+
+.landing,
+.step__3,
+.step__4,
+.step__5,
+.step__6,
+.step__7,
+.step__8 {
+  text-align: center;
+}
+
+.retiro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.voucher {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 10px;
+}
+
+.info h5,
+h6 {
+  margin: 0;
+}
+
+.step__6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
